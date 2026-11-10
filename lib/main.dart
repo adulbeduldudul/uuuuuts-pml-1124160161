@@ -12,7 +12,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext cogitntext) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title : 'Sayyid abdul wasye (1124160161)'
+      title : 'Sayyid abdul wasye (1124160161)',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+          brightness: Brightness.dark,
+        ),
+      ),
+      themeMode: ThemeMode.system,
+      home: const ProfilePage(),
     );
   }
 }
