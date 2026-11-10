@@ -39,15 +39,13 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profil Sayid'),
-        actions: [
+        actions: [  
           IconButton(
             icon: const Icon(Icons.info_outline),
             onPressed: () {},
           ),
         ],
       ),
-    )
-
+    );
   }
 }
-
