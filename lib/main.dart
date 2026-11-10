@@ -35,7 +35,18 @@ class ProfilePage extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-
+    final textTheme = Theme.of(context).textTheme;
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Profil Sayid'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.info_outline),
+            onPressed: () {},
+          ),
+        ],
+      ),
+    )
 
   }
 }
