@@ -7,8 +7,12 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext cogitntext) {
     return MaterialApp(
+      title: 'uts nomor 1',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
     );
   }
 }
