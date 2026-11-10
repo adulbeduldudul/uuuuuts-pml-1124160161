@@ -16,3 +16,14 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+class ContohApp extends StatelessWidget {
+  const ContohApp({super.key});
+ 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      
+    );
+  }
+}
+
