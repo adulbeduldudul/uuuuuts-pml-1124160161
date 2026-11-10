@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title : 'Sayyid abdul wasye (1124160161)',
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 25, 5, 59)),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
@@ -164,6 +164,39 @@ class ProfilePage extends StatelessWidget {
                         label: 'Hobi',
                         value: 'Reverse Engineering & Gaming',
                       ),
+                    ],
+                  ),
+                ),
+              ),
+                            const SizedBox(height: 16),
+
+              // Card Keahlian / Hobi (Minimal 3 InfoTile)
+              Card(
+                elevation: 2,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0,
+                          vertical: 8.0,
+                        ),
+                        child: Text(
+                          'Makanan kesukaan',
+                          style: textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      const Divider(),
+                      const InfoTile(
+                        icon: Icons.food_bank_outlined,
+                        label: 'Top makanan padang',
+                        value: 'rendang, sate padang, tunjang',
+                      ),
+                    
                     ],
                   ),
                 ),
