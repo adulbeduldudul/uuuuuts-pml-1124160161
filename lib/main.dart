@@ -12,11 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext cogitntext) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title : 'Jawaban uts sayyid abdul wasye',
-      home: Scaffold(body : Center(
-        child : Text("hallo")
-      ),
-      ),
+      title : 'Sayyid abdul wasye (1124160161)'
     );
   }
 }
